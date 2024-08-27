@@ -12,6 +12,7 @@
     line-height: 1.4em;
 }
 
+
 /* man kan også gøre det sådan her */
 /* .card:not(:has(h3, img)) p {
     font-size: 1.25rem;
@@ -19,8 +20,8 @@
 } */
 
 /* Kort uden billeder skal have en forøget font-størrelse for overskrifter. */
-.card:not(:has(img)) h3 { 
-      font-size: 1.6rem; }
+.card:not(:has(img))  h3 { 
+      font-size: 1.6rem; } 
 
 
 /*  Kort med billeder skal have nul padding, men deres indhold skal matche padding’en fra de øvrige kort.  */
@@ -97,3 +98,17 @@
         block-size: 100svh;
     }
 }
+
+
+
+
+section {
+    color: #0f172a;
+
+
+h1{
+    background-color: #CFD8E4;
+}
+}
+
+
