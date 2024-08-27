@@ -17,11 +17,16 @@
       font-size: 1.6rem; }
 
 
- /*  Kort med billeder skal have nul padding, men deres indhold skal matche padding’en fra de øvrige kort. */
-/* .card:has(img) {
-    padding: 0
-} */
+/*  Kort med billeder skal have nul padding, men deres indhold skal matche padding’en fra de øvrige kort.  */
+.card:has(img) {
+    padding: 0;
 
+    .content{
+        padding: 1rem;
+    
+    }
+} 
+ 
 
 
 
