@@ -1,14 +1,13 @@
 article {
-    max-width: 65ch;
+    max-width: auto;
     margin-inline: auto;
-
 }
 
 .content {
     --gap: clamp(1rem, 6vw, 3rem);
-    --full: minmax(var(--gap), 1fr);
+    --full: minmax(var(--gap), 2fr);
+    --content: min(75ch, 100% - var(--gap) * 3);
     --feature: minmax(0, 5rem);
-    --content: min(50ch, 100% - var(--gap) * 2);
 
     display: grid;
     grid-template-columns:
@@ -30,9 +29,4 @@ grid-column: feature;
 
 .full{
     grid-column: full;
-    border-radius: unset;
-}
-
-p{
-    grid-column: content;
 }
