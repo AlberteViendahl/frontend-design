@@ -8,6 +8,8 @@ section {
     gap: 1.5rlh;
     color: var(--gray-900);
 
+ 
+
     > * {
         grid-column: 2/-1;
         grid-row: 1/2;
@@ -57,3 +59,7 @@ section {
         grid-row: 2/3;
     }
 }
+
+
+
+
