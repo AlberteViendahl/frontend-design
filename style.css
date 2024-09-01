@@ -2,6 +2,8 @@ li,
 main,
 aside {
     /* Sæt container-type */
+        container: inline-size;
+      
 }
 
 ul {
@@ -12,6 +14,13 @@ ul {
     /* Tilføj container regel, når width > 700px */
     /* - Indstil 2 kolonner */
     /* - Sæt det første barn til `grid-column: span 2` */
+    @container main (width > 700px) { 
+        grid-template-columns: 1fr 1fr;
+
+        >* {
+            grid-column: span 2;
+        }
+    }
 }
 
 article {
